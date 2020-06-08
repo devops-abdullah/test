@@ -8,4 +8,3 @@ yum -y install httpd \
 ESPOSE 443 80
 
 CMD ["/usr/sbin/httpd" , "-D"]
-            
