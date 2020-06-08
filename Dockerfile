@@ -1,7 +1,7 @@
 FROM centos:7
 
-yum update -y
-yum -y install httpd \
+RUN yum update -y
+RUN yum -y install httpd \
                mod_ssl \
 
 
