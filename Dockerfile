@@ -1,8 +1,7 @@
 FROM centos:7
 
 RUN yum update -y
-RUN yum -y install httpd \
-               mod_ssl \
+RUN yum -y install httpd mod_ssl
 
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
 systemd-tmpfiles-setup.service ] || rm -f $i; done); \
