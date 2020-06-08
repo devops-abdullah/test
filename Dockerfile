@@ -5,6 +5,6 @@ RUN yum -y install httpd \
                mod_ssl \
 
 
-ESPOSE 443 80
+EXPOSE 443 80
 
-CMD ["/usr/sbin/httpd" , "-D"]
+CMD ["/usr/sbin/httpd"]
